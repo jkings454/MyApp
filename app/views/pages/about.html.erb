@@ -4,11 +4,19 @@
 		<ul>
 			<li><%= link_to "Home", root_path %></li>
 			<li><%= link_to "About Me", "about" %></li>
-			<li>Blog</li>
+			<li><%= link_to "Blog", posts_path %></li>
 		</ul>
 	</div>
-	<div class ="container">
+	<div class = "container">
+		<%= image_tag("me_blackwhite.jpg") %>
+	</div>
+	<div class = "right-container">
 		<h1> About Me</h1>
+		<p>My name is Josh Nichols. I was born on December 4th, 1996. I love video games, coding, and occasionally horror films. I've got a strange taste in music and a stranger personality, 
+		but that doesn't stop me from pursuing my dream of being a software developer. I hope to one day develop software that will change the world (and make me rich).</p>
+		<p>This is the first ever app that I've made on my own. Using rails 4.1.8, ruby 2.1.5p273, notepad++, github, bootstrap, and html and css. There's no real point to this app, 
+		other than to show off my amazing coding skills. Feel free to use any code you find in this app.</p>
+		<div class = "button"><%=link_to "My Blog", posts_path %></div>
 	</div>
 	<div id ="footer">
 		<a href = "https://www.facebook.com/JoshofThere"><%= image_tag("facebook-dreamstale25.png", class: "some-space")%></a>

@@ -22,7 +22,6 @@
 	font-family: 'PT Sans Narrow', sans-serif;
 	width: 100%;
 	min-height: 100%;
-	display: inline-block;
 	background-color: #FBF7E4;
 	overflow: hidden;
 	margin: auto;
@@ -48,6 +47,21 @@
 	text-align: center;
 	font-style: bold;
 	padding-top: 10px
+}
+.container {
+	overflow: hidden;
+	margin: auto;
+	padding: 10px;
+	display: block;
+	float: left;
+}
+.right-container {
+	width: 500px;
+	padding: 5px;
+	position: relative;
+	float: left;
+	display: block;
+	overflow: hidden;
 }
 .wide-container {
 	max-width: 100%;
@@ -76,14 +90,29 @@
 	height: 70px;
 	background-color: #424242;
 	color: #FBF7E4;
-	position: absolute;
-	bottom: -20;
-	display: inline;
+	clear: both;
+    position: fixed;
+	bottom: 0;
 	padding: 10px 10px 10px 10px;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
-	text-align: right
+	text-align: right;
+	z-index: 0;
+}
+#first-page-footer {
+	width: 100%;
+	height: 70px;
+	background-color: #424242;
+	color: #FBF7E4;
+	clear: both;
+    position: absolute;
+	bottom: -20;
+	padding: 10px 10px 10px 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	text-align: right;
 }
 
 ul {
@@ -119,18 +148,36 @@ a:visited {
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
+	text-align: center;
 }
 
 .some-space {
 	padding-right: 8px
 }
-.container {
-	width: 680px;
-	height: 400px;
-	display: inline;
-	margin-left: auto;
-	margin-right: auto;
-}
 .active {
 	background-color: #424242
+}
+a.blog-link {
+	color: #424242;
+	font-style: bold;
+}
+a.blog-link:hover {
+	color: #8e001c;
+}
+a.blog-link:visisted {
+	color: #000;
+}
+.blog-post {
+	background-color: #fff;
+	padding: 10px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+	max-height: 200px;
+	overflow: hidden;
+}
+.author {
+	color: #424242;
+	font-size: 11px
 }

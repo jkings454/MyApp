@@ -55,5 +55,5 @@ Rails.application.routes.draw do
   #   end
   root "pages#welcome"
   get "about" => "pages#about"
-  get "index" => "posts#index"
+  resources :posts
 end
